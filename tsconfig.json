@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es2017"
+    ],
+    "allowJs": true,
+    "jsx": "react-native",
+    "declaration": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/api/*": [
+        "app/api/*"
+      ],
+      "@/assets/*": [
+        "app/assets/*"
+      ],
+      "@/components/*": [
+        "app/components/*"
+      ],
+      "@/core/*": [
+        "app/core/*"
+      ],
+      "@/glossy/*": [
+        "app/glossy/*"
+      ],
+      "@/hooks/*": [
+        "app/hooks/*"
+      ],
+      "@/common/*": [
+        "app/common/*"
+      ],
+      "@/providers/*": [
+        "app/providers/*"
+      ],
+      "@/screens/*": [
+        "app/screens/*"
+      ],
+      "@/utils/*": [
+        "app/utils/*"
+      ],
+      "@/models/*": [
+        "app/models/*"
+      ],
+      "@/helpers/*": [
+        "app/helpers/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}
