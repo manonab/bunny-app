@@ -13,8 +13,8 @@ export const LoginForm = () => {
             <View className="my-30">
                 <Input
                     className="mb-30"
-                    label={"Email"}
-                    placeholder={"email"}
+                    label={"Email:"}
+                    placeholder={"Aa"}
                     onValueChange={(text: string) => setEmail(text)}
                     defaultValue={email}
                     returnKeyType="next"
@@ -26,9 +26,9 @@ export const LoginForm = () => {
             <Input
                 ref={passwordRef}
                 className="mb-30"
-                label={"Mot de passe"}
+                label={"Mot de passe:"}
                 password={true}
-                placeholder={"password"}
+                placeholder={"Aa"}
                 onValueChange={(text: string) => setPassword(text)}
                 defaultValue={password}
                 blurOnSubmit={true}

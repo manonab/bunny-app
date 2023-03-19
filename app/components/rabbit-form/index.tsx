@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View, TextInput } from "react-native";
+import { Text, TouchableOpacity, View, TextInput, Pressable } from "react-native";
 import React, { useRef, useState } from "react";
 import { Input } from "@/common/input";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -26,11 +26,6 @@ export const RabbitForm = () => {
             <RabbitAgePicker />
             <RabbitBreedsPicker />
             <RabbitFoodPicker />
-            <View className="mt-30 bg-primary-500 text-white p-15 rounded-sm items-center">
-                <TouchableOpacity>
-                    <Text className="text-gray-50 text-body">LGON</Text>
-                </TouchableOpacity>
-            </View>
         </SafeAreaView>
     );
 };

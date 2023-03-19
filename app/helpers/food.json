@@ -2,90 +2,111 @@
      {
           "name": "Apple",
           "id": "6",
-          "image": "./app/assets/svg/banana.svg"
+          "icon": "Apple"
      },
      {
           "name": "Apricot",
-          "id": "35"
+          "id": "35",
+          "icon": "Apricot"
      },
      {
           "name": "Banana",
-          "id": "1"
+          "id": "1",
+          "icon": "Banana"
      },
      {
           "name": "Blackberry",
-          "id": "64"
+          "id": "64",
+          "icon": "Blackberry"
      },
      {
           "name": "Blueberry",
-          "id": "33"
+          "id": "33",
+          "icon": "Blueberry"
      },
      {
           "name": "Cherry",
-          "id": "9"
+          "id": "9",
+          "icon": "Cherry"
      },
      {
           "name": "Carambola",
-          "id":"2"
+          "id": "2",
+          "icon": "Carambola"
      },
      {
           "name": "Gooseberry",
-          "id": "69"
+          "id": "69",
+          "icon": "Gooseberry"
      },
      {
           "name": "Kiwi",
-          "id": "66"
+          "id": "66",
+          "icon": "Kiwi"
      },
      {
           "name": "Lingonberry",
-          "id": "65"
+          "id": "65",
+          "icon": "Lingonberry"
      },
      {
           "name": "Lychee",
-          "id": "67"
+          "id": "67",
+          "icon": "Lychee"
      },
      {
           "name": "Mango",
-          "id": "27"
+          "id": "27",
+          "icon": "Mango"
      },
      {
           "name": "Melon",
-          "id": "41"
+          "id": "41",
+          "icon": "Melon"
      },
      {
           "name": "Morus",
-          "id": "82"
+          "id": "82",
+          "icon": "Morus"
      },
      {
           "name": "Orange",
-          "id": "23"
+          "id": "23",
+          "icon": "Orange"
      },
      {
           "name": "Papaya",
-          "id": "42"
+          "id": "42",
+          "icon": "Papaya"
      },
      {
           "name": "Peach",
-          "id": "86"
+          "id": "86",
+          "icon": "Peach"
      },
      {
           "name": "Pear",
-          "id": "4"
+          "id": "4",
+          "icon": "Pear"
      },
      {
           "name": "Plum",
-          "id": "71"
+          "id": "71",
+          "icon": "Pear"
      },
      {
           "name": "Raspberry",
-          "id": "23"
+          "id": "23",
+          "icon": "Raspberry"
      },
      {
           "name": "Strawberry",
-          "id": "3"
+          "id": "3",
+          "icon": "Strawberry"
      },
      {
           "name": "Watermelon",
-          "id": "25"
+          "id": "25",
+          "icon": "Watermelon"
      }
 ]

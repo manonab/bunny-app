@@ -2,16 +2,19 @@ import { Rabbit } from "@/models/rabbits";
 import React, { useState } from "react";
 import { View } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
-import rabbit from "@/helpers/rabbit.json";
+import foods from "@/helpers/food.json";
+import { Food } from "@/models/food";
+import Icon from "@/common/svg";
 
 export const RabbitFoodPicker = () => {
     const [open, setOpen] = useState<boolean>(false);
     const [value, setValue] = useState<[]>([]);
 
-    const rabbits = Array.isArray(rabbit)
-        ? rabbit.map((bunny: Partial<Rabbit>) => ({
-              label: bunny.breeds,
-              value: bunny.breeds,
+    const food = Array.isArray(foods)
+        ? foods.map((food: Food) => ({
+              label: food.name,
+              value: food.name,
+              icon: () => <Icon width={24} height={24} name={food.icon} />,
           }))
         : [];
 
@@ -22,7 +25,7 @@ export const RabbitFoodPicker = () => {
             <DropDownPicker
                 open={open}
                 value={value}
-                items={rabbits}
+                items={food}
                 setOpen={setOpen}
                 setValue={setValue}
                 multiple={true}
@@ -30,7 +33,7 @@ export const RabbitFoodPicker = () => {
                 max={5}
                 placeholderStyle={{ fontFamily: "Montserrat-Regular" }}
                 placeholder="Que mange votre lapin?"
-                dropDownContainerStyle={{ height: 150, zIndex:10 }}
+                dropDownContainerStyle={{ height: 150, zIndex: 10 }}
             />
         </View>
     );

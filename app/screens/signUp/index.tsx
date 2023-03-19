@@ -17,35 +17,33 @@ export const SignUpScreen = () => {
 
     return (
         <SafeAreaView className="bg-gray-50 flex-1">
-            <View className="w-3/4 mx-auto my-30 flex-1">
+            <View className="w-3/4 mx-auto my-30 flex-1 flex-col justify-center">
                 <View className="items-center">
                     <Profile
-                        width={50}
-                        height={50}
+                        width={100}
+                        height={100}
                         className={"text-primary-lighterPurple"}
                     />
                 </View>
-                <View>
-                    <Text className="text-base my-10 font-body">Nom: </Text>
+                <View className="my-15">
                     <Input
-                        placeholder="Nom"
+                        label="Name:"
+                        placeholder="Aa"
                         defaultValue={name}
                         onValueChange={(text: string) => setName(text)}
                     />
                 </View>
-                <View>
-                    <Text className="text-base my-10 font-body">Email: </Text>
+                <View className="my-15">
                     <Input
-                        placeholder="Email"
+                        label="Email:"
+                        placeholder="Aa"
                         defaultValue={email}
                         onValueChange={(text: string) => setEmail(text)}
                     />
                 </View>
-                <View>
-                    <Text className="text-base my-10 font-body">
-                        Password:{" "}
-                    </Text>
+                <View className="my-15">
                     <Input
+                        label="Mot de passe:"
                         placeholder="Password"
                         defaultValue={password}
                         password={true}
