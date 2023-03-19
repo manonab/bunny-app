@@ -44,7 +44,7 @@ export const Input = forwardRef<TextInput, Props>(
 
     return (
       <View className={className}>
-        {label && <Text className="font-bold text-16 mb-10">{label}</Text>}
+        {label && <Text className="font-body text-16 mb-10">{label}</Text>}
         <View
           className={`-ml-[4px] rounded flex flex-row items-center rounded-[12px] px-[4px] ${
             isFocused && !error
@@ -69,7 +69,6 @@ export const Input = forwardRef<TextInput, Props>(
               ref={ref}
               autoCorrect={false}
               className="w-10/12 bg-[#fff] lowercase"
-              placeholderTextColor="text-gray-500"
               defaultValue={defaultValue}
               secureTextEntry={password && !showPassword}
               placeholder={placeholder}

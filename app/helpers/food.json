@@ -1,0 +1,91 @@
+[
+     {
+          "name": "Apple",
+          "id": "6",
+          "image": "./app/assets/svg/banana.svg"
+     },
+     {
+          "name": "Apricot",
+          "id": "35"
+     },
+     {
+          "name": "Banana",
+          "id": "1"
+     },
+     {
+          "name": "Blackberry",
+          "id": "64"
+     },
+     {
+          "name": "Blueberry",
+          "id": "33"
+     },
+     {
+          "name": "Cherry",
+          "id": "9"
+     },
+     {
+          "name": "Carambola",
+          "id":"2"
+     },
+     {
+          "name": "Gooseberry",
+          "id": "69"
+     },
+     {
+          "name": "Kiwi",
+          "id": "66"
+     },
+     {
+          "name": "Lingonberry",
+          "id": "65"
+     },
+     {
+          "name": "Lychee",
+          "id": "67"
+     },
+     {
+          "name": "Mango",
+          "id": "27"
+     },
+     {
+          "name": "Melon",
+          "id": "41"
+     },
+     {
+          "name": "Morus",
+          "id": "82"
+     },
+     {
+          "name": "Orange",
+          "id": "23"
+     },
+     {
+          "name": "Papaya",
+          "id": "42"
+     },
+     {
+          "name": "Peach",
+          "id": "86"
+     },
+     {
+          "name": "Pear",
+          "id": "4"
+     },
+     {
+          "name": "Plum",
+          "id": "71"
+     },
+     {
+          "name": "Raspberry",
+          "id": "23"
+     },
+     {
+          "name": "Strawberry",
+          "id": "3"
+     },
+     {
+          "name": "Watermelon",
+          "id": "25"
+     }
+]
