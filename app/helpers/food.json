@@ -1,112 +1,308 @@
 [
      {
-          "name": "Apple",
           "id": "6",
-          "icon": "Apple"
+          "name": "Apple",
+          "icon": "Apple",
+          "type": "fruits"
      },
      {
-          "name": "Apricot",
           "id": "35",
-          "icon": "Apricot"
+          "name": "Apricot",
+          "icon": "Apricot",
+          "type": "fruits"
      },
      {
-          "name": "Banana",
           "id": "1",
-          "icon": "Banana"
+          "name": "Banana",
+          "icon": "Banana",
+          "type": "fruits"
      },
      {
-          "name": "Blackberry",
+          "id": "5",
+          "name": "Basil",
+          "icon": "Basil",
+          "type": "herbs"
+     },
+     {
+          "id": "21",
+          "name": "Beet",
+          "icon": "Beet",
+          "type": "vegetables"
+     },
+     {
           "id": "64",
-          "icon": "Blackberry"
+          "name": "Blackberry",
+          "icon": "Blackberry",
+          "type": "fruits"
      },
      {
-          "name": "Blueberry",
           "id": "33",
-          "icon": "Blueberry"
+          "name": "Blueberry",
+          "icon": "Blueberry",
+          "type": "fruits"
      },
      {
-          "name": "Cherry",
-          "id": "9",
-          "icon": "Cherry"
+          "id": "8",
+          "name": "Broccoli",
+          "icon": "Broccoli",
+          "type": "vegetables"
      },
      {
-          "name": "Carambola",
+          "id": "12",
+          "name": "Brussels Sprouts",
+          "icon": "Brussels Sprouts",
+          "type": "vegetables"
+     },
+     {
+          "id": "10",
+          "name": "Carrot",
+          "icon": "Carrot",
+          "type": "vegetables"
+     },
+     {
           "id": "2",
-          "icon": "Carambola"
+          "name": "Carambola",
+          "icon": "Carambola",
+          "type": "fruits"
      },
      {
-          "name": "Gooseberry",
+          "id": "14",
+          "name": "Cauliflower",
+          "icon": "Cauliflower",
+          "type": "vegetables"
+     },
+     {
+          "id": "11",
+          "name": "Celery",
+          "icon": "Celery",
+          "type": "vegetables"
+     },
+     {
+          "id": "19",
+          "name": "Chard",
+          "icon": "Chard",
+          "type": "vegetables"
+     },
+     {
+          "id": "9",
+          "name": "Cherry",
+          "icon": "Cherry",
+          "type": "fruits"
+     },
+     {
+          "id": "16",
+          "name": "Coriander",
+          "icon": "Coriander",
+          "type": "herbs"
+     },
+     {
+          "id": "34",
+          "name": "Dandelion",
+          "icon": "Dandelion",
+          "type": "vegetables"
+     },
+     {
+          "id": "7",
+          "name": "Endive",
+          "icon": "Endive",
+          "type": "vegetables"
+     },
+     {
+          "id": "43",
+          "name": "Grape",
+          "icon": "Grape",
+          "type": "fruits"
+     },
+     {
           "id": "69",
-          "icon": "Gooseberry"
+          "name": "Gooseberry",
+          "icon": "Gooseberry",
+          "type": "vegetables"
      },
      {
-          "name": "Kiwi",
+          "id": "13",
+          "name": "Kale",
+          "icon": "Kale",
+          "type": "vegetables"
+     },
+     {
           "id": "66",
-          "icon": "Kiwi"
+          "name": "Kiwi",
+          "icon": "Kiwi",
+          "type": "fruits"
      },
      {
-          "name": "Lingonberry",
+          "id": "31",
+          "name": "Kohlrabi",
+          "icon": "Kohlrabi",
+          "type": "vegetables"
+     },
+     {
+          "id": "26",
+          "name": "Lettuce",
+          "icon": "Lettuce",
+          "type": "vegetables"
+     },
+     {
           "id": "65",
-          "icon": "Lingonberry"
+          "name": "Lingonberry",
+          "icon": "Lingonberry",
+          "type": "fruits"
      },
      {
-          "name": "Lychee",
           "id": "67",
-          "icon": "Lychee"
+          "name": "Lychee",
+          "icon": "Lychee",
+          "type": "fruits"
      },
      {
-          "name": "Mango",
           "id": "27",
-          "icon": "Mango"
+          "name": "Mango",
+          "icon": "Mango",
+          "type": "fruits"
      },
      {
-          "name": "Melon",
           "id": "41",
-          "icon": "Melon"
+          "name": "Melon",
+          "icon": "Melon",
+          "type": "fruits"
      },
      {
-          "name": "Morus",
+          "id": "28",
+          "name": "Mint",
+          "icon": "Mint",
+          "type": "herbs"
+     },
+     {
           "id": "82",
-          "icon": "Morus"
+          "name": "Morus",
+          "icon": "Morus",
+          "type": "fruits"
      },
      {
+          "id": "23",
           "name": "Orange",
-          "id": "23",
-          "icon": "Orange"
+          "icon": "Orange",
+          "type": "fruits"
      },
      {
-          "name": "Papaya",
+          "id": "38",
+          "name": "Oregano",
+          "icon": "Oregano",
+          "type": "herbs"
+     },
+     {
           "id": "42",
-          "icon": "Papaya"
+          "name": "Papaya",
+          "icon": "Papaya",
+          "type": "fruits"
      },
      {
-          "name": "Peach",
+          "id": "29",
+          "name": "Parsip",
+          "icon": "Parsip",
+          "type": "vegetables"
+     },
+     {
+          "id": "30",
+          "name": "Parsley",
+          "icon": "Parsley",
+          "type": "herbs"
+     },
+     {
           "id": "86",
-          "icon": "Peach"
+          "name": "Peach",
+          "icon": "Peach",
+          "type": "fruits"
      },
      {
-          "name": "Pear",
           "id": "4",
-          "icon": "Pear"
+          "name": "Pear",
+          "icon": "Pear",
+          "type": "fruits"
      },
      {
-          "name": "Plum",
+          "id": "40",
+          "name": "Pinneapple",
+          "icon": "Pinneapple",
+          "type": "fruits"
+     },
+     {
           "id": "71",
-          "icon": "Pear"
+          "name": "Plum",
+          "icon": "Plum",
+          "type": "fruits"
      },
      {
-          "name": "Raspberry",
+          "id": "36",
+          "name": "Radish",
+          "icon": "Radish",
+          "type": "vegetables"
+     },
+     {
           "id": "23",
-          "icon": "Raspberry"
+          "name": "Raspberry",
+          "icon": "Raspberry",
+          "type": "fruits"
      },
      {
-          "name": "Strawberry",
+          "id": "24",
+          "name": "Rosemary",
+          "icon": "Rosemary",
+          "type": "herbs"
+     },
+     {
+          "id": "23",
+          "name": "Spinach",
+          "icon": "Spinach",
+          "type": "vegetables"
+     },
+     {
           "id": "3",
-          "icon": "Strawberry"
+          "name": "Strawberry",
+          "icon": "Strawberry",
+          "type": "fruits"
      },
      {
-          "name": "Watermelon",
+          "id": "20",
+          "name": "Squash Blossoms",
+          "icon": "Squash Blossoms",
+          "type": "vegetables"
+     },
+     {
+          "id": "32",
+          "name": "Thym",
+          "icon": "Thym",
+          "type": "herbs"
+     },
+     {
+          "id": "37",
+          "name": "Tomato",
+          "icon": "Tomato",
+          "type": "fruits"
+     },
+     {
+          "id": "18",
+          "name": "Turnip",
+          "icon": "Turnip",
+          "type": "vegetables"
+     },
+     {
+          "id": "17",
+          "name": "Watercress",
+          "icon": "Watercress",
+          "type": "vegetables"
+     },
+     {
           "id": "25",
-          "icon": "Watermelon"
+          "name": "Watermelon",
+          "icon": "Watermelon",
+          "type": "fruits"
+     },
+     {
+          "id": "39",
+          "name": "Zucchini",
+          "icon": "Zucchini",
+          "type": "vegetables"
      }
 ]

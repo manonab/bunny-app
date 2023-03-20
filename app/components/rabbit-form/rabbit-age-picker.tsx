@@ -6,13 +6,13 @@ export const RabbitAgePicker = () => {
     const [open, setOpen] = useState<boolean>(false);
     const [value, setValue] = useState<number | null>(null);
 
-    const numbers = [...Array(100).keys()].map((number) => ({
+    const numbers = [...Array(21).keys()].map((number) => ({
         label: number.toString(),
         value: number,
     }));
 
     return (
-        <View className="my-10 w-3/4 mx-auto z-10">
+        <View className="my-10 mx-auto z-[99]">
             <DropDownPicker
                 open={open}
                 value={value}

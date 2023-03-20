@@ -10,22 +10,20 @@ export const LoginForm = () => {
     const navigation = useNavigation();
     return (
         <SafeAreaView>
-            <View className="my-30">
-                <Input
-                    className="mb-30"
-                    label={"Email:"}
-                    placeholder={"Aa"}
-                    onValueChange={(text: string) => setEmail(text)}
-                    defaultValue={email}
-                    returnKeyType="next"
-                    onSubmitEditing={() => {
-                        passwordRef.current?.focus();
-                    }}
-                />
-            </View>
+            <Input
+                className="mb-30"
+                label={"Email:"}
+                placeholder={"Aa"}
+                onValueChange={(text: string) => setEmail(text)}
+                defaultValue={email}
+                returnKeyType="next"
+                onSubmitEditing={() => {
+                    passwordRef.current?.focus();
+                }}
+            />
             <Input
                 ref={passwordRef}
-                className="mb-30"
+                className="mb-30 "
                 label={"Mot de passe:"}
                 password={true}
                 placeholder={"Aa"}

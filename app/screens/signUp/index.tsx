@@ -7,9 +7,9 @@ import {
     View,
     SafeAreaView,
 } from "react-native";
-import Profile from "@/assets/svg/profil-circled.svg";
+import Profile from "@/assets/svg/nonbinary.svg";
 
-export const SignUpScreen = () => {
+export const SignUpScreen: React.FC = () => {
     const navigation = useNavigation();
     const [email, setEmail] = useState<string>("");
     const [name, setName] = useState<string>("");
@@ -25,15 +25,15 @@ export const SignUpScreen = () => {
                         className={"text-primary-lighterPurple"}
                     />
                 </View>
-                <View className="my-15">
+                <View className="my-5">
                     <Input
-                        label="Name:"
+                        label="Nom:"
                         placeholder="Aa"
                         defaultValue={name}
                         onValueChange={(text: string) => setName(text)}
                     />
                 </View>
-                <View className="my-15">
+                <View className="my-5">
                     <Input
                         label="Email:"
                         placeholder="Aa"
@@ -41,10 +41,10 @@ export const SignUpScreen = () => {
                         onValueChange={(text: string) => setEmail(text)}
                     />
                 </View>
-                <View className="my-15">
+                <View className="my-5">
                     <Input
                         label="Mot de passe:"
-                        placeholder="Password"
+                        placeholder="Aa"
                         defaultValue={password}
                         password={true}
                         onValueChange={(text: string) => setPassword(text)}

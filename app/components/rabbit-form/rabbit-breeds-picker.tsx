@@ -1,33 +1,36 @@
-import { Rabbit } from "@/models/rabbits";
 import React, { useState } from "react";
 import { View } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
+
 import rabbit from "@/helpers/rabbit.json";
+import { Rabbit } from "@/models/rabbits";
+import RabbitLogo from "@/assets/svg/rabbit.svg";
 
 export const RabbitBreedsPicker = () => {
     const [open, setOpen] = useState<boolean>(false);
-    const [value, setValue] = useState<[]>([]);
+    const [value, setValue] = useState<string | null>("");
 
     const rabbits = Array.isArray(rabbit)
         ? rabbit.map((bunny: Partial<Rabbit>) => ({
               label: bunny.breeds,
               value: bunny.breeds,
+              icon: () => <RabbitLogo width={24} height={24} />,
           }))
         : [];
 
-    const selectedItems = value.map((item) => item);
-
     return (
-        <View className="my-10 w-3/4 mx-auto">
+        <View className="my-10 mx-auto z-10">
             <DropDownPicker
                 open={open}
                 value={value}
                 items={rabbits}
                 setOpen={setOpen}
                 setValue={setValue}
+                searchable={true}
+                searchPlaceholder="Aa"
                 placeholderStyle={{ fontFamily: "Montserrat-Regular" }}
-                placeholder="Quel age a votre lapin?"
-                dropDownContainerStyle={{ height: 150, zIndex: 10 }}
+                placeholder="Quel est la race de votre lapin?"
+                dropDownContainerStyle={{ height: 150 }}
             />
         </View>
     );

@@ -12,6 +12,7 @@ import {
 } from "react-native";
 import { LoginForm } from "@/components/login-form";
 import { useNavigation } from "@react-navigation/native";
+import Rabbit from "@/assets/svg/logo.svg";
 
 export const LoginScreen = () => {
     const navigation = useNavigation();
@@ -28,13 +29,11 @@ export const LoginScreen = () => {
                             backgroundColor="#F9F9FB"
                         />
                         <View className="flex items-center mt-40">
-                            <Text
-                                className="text-2xl mb-10 mt-25 font-title"
-                                
-                            >
+                            <Text className="text-2xl mb-10 mt-25 font-title">
                                 Welcome back!
                             </Text>
                         </View>
+                        <Rabbit width={100} height={200} className={"self-center"} />
                         <LoginForm />
                     </View>
                 </TouchableWithoutFeedback>

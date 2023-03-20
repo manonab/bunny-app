@@ -1,9 +1,8 @@
 export interface Rabbit {
      id: string;
-     name: string;
-     surname: string;
      image: string;
+     name: string;
      breeds: string;
      favoriteFood: string;
-     birth: string
+     years: string
    }
