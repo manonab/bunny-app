@@ -1,13 +1,14 @@
-import { Text, View, TextInput, SafeAreaView, Pressable } from "react-native";
+import { Text, TextInput, SafeAreaView, Pressable } from "react-native";
 import React, { useRef, useState } from "react";
 import { Input } from "@/common/input";
-import { useNavigation } from "@react-navigation/native";
+import { useSignIn } from "@/hooks/use-signin";
 
 export const LoginForm = () => {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const passwordRef = useRef<TextInput>(null);
-    const navigation = useNavigation();
+    const { signIn } = useSignIn();
+
     return (
         <SafeAreaView>
             <Input
@@ -33,7 +34,7 @@ export const LoginForm = () => {
             />
             <Pressable
                 className="mt-30 bg-primary-darkPurple text-white p-15 rounded-sm items-center w-2/4 mx-auto"
-                onPress={() => navigation.navigate("HomeScreen")}
+                onPress={() => signIn({ email, password })}
             >
                 <Text className="text-body text-primary-white text-l">
                     LOGIN
