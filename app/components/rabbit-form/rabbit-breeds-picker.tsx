@@ -1,37 +1,46 @@
-import React, { useState } from "react";
-import { View } from "react-native";
+import React, {useState} from "react";
+import {View} from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 
 import rabbit from "@/helpers/rabbit.json";
-import { Rabbit } from "@/models/rabbits";
 import RabbitLogo from "@/assets/svg/rabbit.svg";
+import {RabbitFormFields} from "@/models/rabbits";
 
-export const RabbitBreedsPicker = () => {
-    const [open, setOpen] = useState<boolean>(false);
-    const [value, setValue] = useState<string | null>("");
+interface RabbitBreedsPickerProps {
+  rabbitBreed: string;
+  onRabbitBreedChange: (breed: string) => void;
+}
 
-    const rabbits = Array.isArray(rabbit)
-        ? rabbit.map((bunny: Partial<Rabbit>) => ({
-              label: bunny.breeds,
-              value: bunny.breeds,
-              icon: () => <RabbitLogo width={24} height={24} />,
-          }))
-        : [];
+export const RabbitBreedsPicker: React.FC<RabbitBreedsPickerProps> = ({
+  rabbitBreed,
+  onRabbitBreedChange,
+}) => {
+  const [open, setOpen] = useState<boolean>(false);
+  const [value, setValue] = useState<string | null>(rabbitBreed);
 
-    return (
-        <View className="my-10 mx-auto z-10">
-            <DropDownPicker
-                open={open}
-                value={value}
-                items={rabbits}
-                setOpen={setOpen}
-                setValue={setValue}
-                searchable={true}
-                searchPlaceholder="Aa"
-                placeholderStyle={{ fontFamily: "Montserrat-Regular" }}
-                placeholder="Quel est la race de votre lapin?"
-                dropDownContainerStyle={{ height: 150 }}
-            />
-        </View>
-    );
+  const rabbits = Array.isArray(rabbit)
+  ? rabbit.map((bunny: Partial<RabbitFormFields>) => ({
+        label: bunny.breed,
+        value: bunny.breed,
+        icon: () => <RabbitLogo width={24} height={24} />,
+    }))
+  : [];
+
+  return (
+    <View className="my-10 mx-auto z-10">
+      <DropDownPicker
+        open={open}
+        value={value}
+        items={rabbits}
+        setOpen={setOpen}
+        setValue={setValue}
+        searchable={true}
+        searchPlaceholder="Aa"
+        placeholderStyle={{fontFamily: "Montserrat-Regular"}}
+        placeholder="Quel est la race de votre lapin?"
+        dropDownContainerStyle={{height: 150}}
+        onChangeValue={(breed: string) => onRabbitBreedChange(breed)}
+      />
+    </View>
+  );
 };

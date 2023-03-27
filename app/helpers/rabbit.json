@@ -1,198 +1,198 @@
 [
      {
           "id": "1",
-          "breeds": "American"
+          "breed": "American"
      },
      {
           "id": "2",
-          "breeds": "American Chinchilla"
+          "breed": "American Chinchilla"
      },
      {
           "id": "3",
-          "breeds": "American Fuzzy Lop"
+          "breed": "American Fuzzy Lop"
      },
      {
           "id": "4",
-          "breeds": "American Sable"
+          "breed": "American Sable"
      },
      {
           "id": "5",
-          "breeds": "Argente Brun"
+          "breed": "Argente Brun"
      },
      {
           "id": "6",
-          "breeds": "Belgian Hare"
+          "breed": "Belgian Hare"
      },
      {
           "id": "7",
-          "breeds": "Beveren"
+          "breed": "Beveren"
      },
      {
           "id": "8",
-          "breeds": "Blance de Hotot"
+          "breed": "Blance de Hotot"
      },
      {
           "id": "9",
-          "breeds": "Britannia Petite"
+          "breed": "Britannia Petite"
      },
      {
           "id": "10",
-          "breeds": "Californian"
+          "breed": "Californian"
      },
      {
           "id": "11",
-          "breeds": "Champagne D'argent"
+          "breed": "Champagne D'argent"
      },
      {
           "id": "12",
-          "breeds": "Checkered Giant"
+          "breed": "Checkered Giant"
      },
      {
           "id": "13",
-          "breeds": "Cinnamon"
+          "breed": "Cinnamon"
      },
      {
           "id": "14",
-          "breeds": "Creme D'argent"
+          "breed": "Creme D'argent"
      },
      {
           "id": "15",
-          "breeds": "Dutch"
+          "breed": "Dutch"
      },
      {
           "id": "16",
-          "breeds": "Dwarf Hotot"
+          "breed": "Dwarf Hotot"
      },
      {
           "id": "17",
-          "breeds": "English Angora"
+          "breed": "English Angora"
      },
      {
           "id": "18",
-          "breeds": "English Lop"
+          "breed": "English Lop"
      },
      {
           "id": "19",
-          "breeds": "English Spot"
+          "breed": "English Spot"
      },
      {
           "id": "20",
-          "breeds": "Flemish Giant"
+          "breed": "Flemish Giant"
      },
      {
           "id": "21",
-          "breeds": "Florida White"
+          "breed": "Florida White"
      },
      {
           "id": "22",
-          "breeds": "French Angora"
+          "breed": "French Angora"
      },
      {
           "id": "23",
-          "breeds": "French Lop"
+          "breed": "French Lop"
      },
      {
           "id": "24",
-          "breeds": "Giant Angora"
+          "breed": "Giant Angora"
      },
      {
           "id": "25",
-          "breeds": "Giant Chinchilla"
+          "breed": "Giant Chinchilla"
      },
      {
           "id": "26",
-          "breeds": "Harlequin"
+          "breed": "Harlequin"
      },
      {
           "id": "27",
-          "breeds": "Havana"
+          "breed": "Havana"
      },
      {
           "id": "28",
-          "breeds": "Himalayan"
+          "breed": "Himalayan"
      },
      {
           "id": "29",
-          "breeds": "Holland Lop"
+          "breed": "Holland Lop"
      },
      {
           "id": "30",
-          "breeds": "Jersey Wooly"
+          "breed": "Jersey Wooly"
      },
      {
           "id": "31",
-          "breeds": "Lilac"
+          "breed": "Lilac"
      },
      {
           "id": "32",
-          "breeds": "Lionhead"
+          "breed": "Lionhead"
      },
      {
           "id": "33",
-          "breeds": "Mini Lop"
+          "breed": "Mini Lop"
      },
      {
           "id": "34",
-          "breeds": "Mini Rex"
+          "breed": "Mini Rex"
      },
      {
           "id": "35",
-          "breeds": "Mini Satin"
+          "breed": "Mini Satin"
      },
      {
           "id": "36",
-          "breeds": "Netherland Dwarf"
+          "breed": "Netherland Dwarf"
      },
      {
           "id": "37",
-          "breeds": "New Zealand"
+          "breed": "New Zealand"
      },
      {
           "id": "38",
-          "breeds": "Palomino"
+          "breed": "Palomino"
      },
      {
           "id": "39",
-          "breeds": "Polish"
+          "breed": "Polish"
      },
      {
           "id": "40",
-          "breeds": "Rex"
+          "breed": "Rex"
      },
      {
           "id": "41",
-          "breeds": "Rhinelander"
+          "breed": "Rhinelander"
      },
      {
           "id": "42",
-          "breeds": "Satin"
+          "breed": "Satin"
      },
      {
           "id": "43",
-          "breeds": "Satin Angora"
+          "breed": "Satin Angora"
      },
      {
           "id": "44",
-          "breeds": "Silver"
+          "breed": "Silver"
      },
      {
           "id": "45",
-          "breeds": "Silver Fox"
+          "breed": "Silver Fox"
      },
      {
           "id": "46",
-          "breeds": "Silver Marten"
+          "breed": "Silver Marten"
      },
      {
           "id": "47",
-          "breeds": "Standard Chinchilla"
+          "breed": "Standard Chinchilla"
      },
      {
           "id": "48",
-          "breeds": "Tan"
+          "breed": "Tan"
      },
      {
           "id": "49",
-          "breeds": "Thrianta"
+          "breed": "Thrianta"
      }
 ]

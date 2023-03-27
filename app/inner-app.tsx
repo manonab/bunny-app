@@ -9,8 +9,8 @@ import {SignUpScreen} from "./screens/signUp";
 import {LastStepScreen} from "./screens/signUp/last-step";
 import {useSelector} from "react-redux";
 import {RootState} from "./utils/store";
-import { RootStackParamList } from "./models/root-stack-param-list";
-import { LoginScreen } from "./screens/login";
+import {RootStackParamList} from "./models/root-stack-param-list";
+import {LoginScreen} from "./screens/login";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -35,6 +35,7 @@ export const InnerApp = () => {
           <>
             <Stack.Screen name="LoginScreen" component={LoginScreen} />
             <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+            <Stack.Screen name="LastStepScreen" component={LastStepScreen} />
           </>
         )}
       </Stack.Navigator>

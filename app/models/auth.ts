@@ -10,15 +10,13 @@ export interface AuthPayload {
     };
     headers: Headers;
 };
-     
-export interface User {
-    user_id: string;
+export interface SignUpParams {
     name: string;
     email: string;
     password: string;
-};
-  
-export interface UserContextType {
-    user: User | null;
-    setUser: (user: User | null) => void;
-};
+    rabbitName: string;
+    rabbitAge: number | null;
+    rabbitBreed: string;
+    rabbitFood: string[];
+    rabbitImage: string;
+}

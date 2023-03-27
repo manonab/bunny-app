@@ -30,7 +30,6 @@ export const userSlice = createSlice({
     setSignUp: (
       state,
       action: PayloadAction<{
-        password: string;
         email: string;
         name: string;
       }>,
