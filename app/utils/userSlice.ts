@@ -3,14 +3,16 @@ import { RootState } from './reducer';
 
 export interface UserState {
   isAuthenticated: boolean;
-  user_id: string | null;
+  user_token: string;
+  user_id: number;
   name: string | null;
   email: string | null;
 }
 
 const initialState: UserState = {
   isAuthenticated: false,
-  user_id: null,
+  user_token: "",
+  user_id: 0,
   name: null,
   email: null,
 };
@@ -19,13 +21,14 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    setLogin: (state, action: PayloadAction<string>) => {
+    setLogin: (state, action: PayloadAction<{ user_id: number, user_token: string }>) => {
       state.isAuthenticated = true;
-      state.user_id = action.payload;
+      state.user_id = action.payload.user_id; 
+      state.user_token = action.payload.user_token;
     },
     setLogout: state => {
       state.isAuthenticated = false;
-      state.user_id = null;
+      state.user_id = 0;
     },
     setSignUp: (
       state,

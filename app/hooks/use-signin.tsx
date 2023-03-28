@@ -3,7 +3,8 @@ import {useDispatch} from "react-redux";
 import {auth} from "../api/auth";
 import {AuthPayload} from "../models/auth";
 import {useNavigation} from "@react-navigation/native";
-import { setLogin } from "@/utils/userSlice";
+import {setLogin} from "@/utils/userSlice";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 interface SignInParams {
   email: string;
@@ -22,23 +23,27 @@ export const useSignIn = (): SignInResult => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
 
-const signIn = async (params: SignInParams) => {
-  setIsLoading(true);
-  auth
-    .signIn(params)
-    .then((resp: AuthPayload | undefined) => {
-      if (resp?.data) {
-        const user_id = resp?.data.user_id.toString();
-        dispatch(setLogin(user_id));
-        navigation.navigate("HomeScreen");
-      }
-    })
-    .catch((err: any) => setError(err))
-    .finally(() => {
-      setIsLoading(false);
-      console.log("Resolved");
-  });
-};
+  const signIn = async (params: SignInParams) => {
+    setIsLoading(true);
+    auth
+      .signIn(params)
+      .then((resp: AuthPayload | undefined) => {
+        if (resp?.data) {
+          const user_id = resp?.data.user_id;
+          const user_token = resp?.data.user_token;
+          dispatch(setLogin({user_id: user_id, user_token: user_token}));
+          navigation.navigate("HomeScreen", {
+            userId: user_id,
+            userToken: user_token,
+          });
+        }
+      })
+      .catch((err: any) => setError(err))
+      .finally(() => {
+        setIsLoading(false);
+        console.log("Finished");
+      });
+  };
 
   return {error, isLoading, signIn};
 };

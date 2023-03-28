@@ -8,12 +8,18 @@ import {
   Keyboard,
   Platform,
   Button,
+  Image,
+  Text,
 } from "react-native";
 import {BottomBar} from "@/components/bottom-bar";
 import {useLogout} from "@/hooks/use-signout";
+import {useGetRabbits} from "@/hooks/use-home";
+import RNFS from "react-native-fs";
 
-export const HomeScreen = () => {
+export const HomeScreen: React.FC = () => {
   const handleLogout = useLogout();
+  const {rabbits} = useGetRabbits();
+  console.log(rabbits);
   return (
     <SafeAreaView className="bg-gray-50 flex-1">
       <KeyboardAvoidingView
@@ -26,7 +32,9 @@ export const HomeScreen = () => {
             </View>
           </View>
         </TouchableWithoutFeedback>
-        <BottomBar />
+        <Text className="px-30 text-primary-black ">
+          {rabbits?.rabbits[0].RabbitName}
+        </Text>
       </KeyboardAvoidingView>
     </SafeAreaView>
   );

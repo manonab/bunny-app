@@ -7,6 +7,7 @@ export interface AuthPayload {
     data: {
       message: string;
       user_id: number;
+      user_token: string;
     };
     headers: Headers;
 };

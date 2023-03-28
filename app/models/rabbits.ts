@@ -9,3 +9,16 @@ export interface RabbitFormFields {
   favoriteFood: Food[];
   isDisplayed: boolean; 
 }
+
+export interface RabbitsRequest {
+  rabbits: Rabbits[];
+}
+export interface Rabbits{
+  id: string;
+  RabbitImage: string;
+  RabbitName: string;
+  RabbitAge: number;
+  RabbitBreed: string;
+  RabbitFood: string[];
+  isDisplayed: boolean; 
+}

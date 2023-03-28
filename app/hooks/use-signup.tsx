@@ -28,7 +28,7 @@ export const useSignUp = (): SignUpResult => {
       .catch((err: any) => setError(err))
       .finally(() => {
         setIsLoading(false);
-        console.log("Resolved");
+        console.log("Finished");
       });
   };
 

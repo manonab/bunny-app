@@ -4,7 +4,7 @@ import DropDownPicker from "react-native-dropdown-picker";
 
 import rabbit from "@/helpers/rabbit.json";
 import RabbitLogo from "@/assets/svg/rabbit.svg";
-import {RabbitFormFields} from "@/models/rabbits";
+import {Rabbits} from "@/models/rabbits";
 
 interface RabbitBreedsPickerProps {
   rabbitBreed: string;
@@ -19,12 +19,12 @@ export const RabbitBreedsPicker: React.FC<RabbitBreedsPickerProps> = ({
   const [value, setValue] = useState<string | null>(rabbitBreed);
 
   const rabbits = Array.isArray(rabbit)
-  ? rabbit.map((bunny: Partial<RabbitFormFields>) => ({
+    ? rabbit.map((bunny: Partial<Rabbits>) => ({
         label: bunny.breed,
         value: bunny.breed,
         icon: () => <RabbitLogo width={24} height={24} />,
-    }))
-  : [];
+      }))
+    : [];
 
   return (
     <View className="my-10 mx-auto z-10">
